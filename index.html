@@ -278,6 +278,42 @@ footer{background:#111;color:#777;padding:48px 32px 24px}
 .stock-card table td .pn { font-family:monospace; font-size:.75rem; color:#999; display:block; margin-top:1px; }
 
 </style>
+  <!-- Structured Data / JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "AutoPartsStore",
+    "name": "Sumo Auto Parts",
+    "description": "Auckland specialist in genuine Japanese and European used and aftermarket car parts. Importing direct from Japan.",
+    "url": "https://sumoautoparts.co.nz",
+    "telephone": "0800 321-777",
+    "email": "info@sumoautoparts.co.nz",
+    "logo": "https://sumoautoparts.co.nz/images/sumo_logo_white.png",
+    "image": "https://sumoautoparts.co.nz/images/sumo_aerial.jpg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "133 Pilkington Road",
+      "addressLocality": "Panmure",
+      "addressRegion": "Auckland",
+      "postalCode": "1072",
+      "addressCountry": "NZ"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": -36.896,
+      "longitude": 174.853
+    },
+    "openingHoursSpecification": [
+      {"@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"], "opens": "08:00", "closes": "17:00"},
+      {"@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "09:00", "closes": "14:00"}
+    ],
+    "sameAs": ["https://www.trademe.co.nz/a/search?member_listing=8599100"]
+  }
+  </script>
+  <!-- WebMCP -->
+  <link rel="sitemap" href="/sitemap.xml" type="application/xml" />
+  <link rel="webmcp" href="/webmcp.json" type="application/json" />
+  <meta name="llms-txt" content="/llms.txt" />
 </head>
 <body>
 
@@ -483,6 +519,9 @@ footer{background:#111;color:#777;padding:48px 32px 24px}
           <span class="tm-text"><strong>View Our TradeMe Listings</strong>Browse all available parts on Trade Me</span>
           <span style="margin-left:auto;color:rgba(255,255,255,.6)">&rarr;</span>
         </a>
+        <div style="margin-top:24px;border-radius:10px;overflow:hidden;box-shadow:0 4px 16px rgba(0,0,0,.12)">
+          <img src="images/sumo_aerial.jpg" alt="Sumo Auto Parts - 133 Pilkington Road, Panmure, Auckland" style="width:100%;height:auto;display:block"/>
+        </div>
       </div>
       <div class="form-box">
         <h3>Parts Enquiry</h3>

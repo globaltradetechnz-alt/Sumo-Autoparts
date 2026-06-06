@@ -1,0 +1,39 @@
+{
+  "name": "Sumo Auto Parts",
+  "description": "Auckland specialist in Japanese and European used and aftermarket car parts. 1,200+ parts in stock.",
+  "url": "https://sumoautoparts.co.nz",
+  "contact": {
+    "phone": "+6408003217777",
+    "email": "info@sumoautoparts.co.nz",
+    "address": "133 Pilkington Road, Panmure, Auckland 1072, New Zealand"
+  },
+  "tools": [
+    {
+      "name": "parts_enquiry",
+      "description": "Submit a parts enquiry to Sumo Auto Parts. Provide your name, email, vehicle details, registration number and the part you need.",
+      "url": "https://sumoautoparts.co.nz/index.html#contact",
+      "method": "form",
+      "inputs": [
+        {"name": "name", "type": "string", "required": true, "description": "Customer full name"},
+        {"name": "email", "type": "string", "required": true, "description": "Customer email address"},
+        {"name": "phone", "type": "string", "required": false, "description": "Customer phone number"},
+        {"name": "vehicle", "type": "string", "required": false, "description": "Vehicle year, make and model e.g. 2012 Nissan Serena C26"},
+        {"name": "registration", "type": "string", "required": false, "description": "Vehicle registration number"},
+        {"name": "part", "type": "string", "required": true, "description": "Part name or description required"},
+        {"name": "notes", "type": "string", "required": false, "description": "Additional notes such as colour code or condition preference"}
+      ]
+    },
+    {
+      "name": "search_japanese_stock",
+      "description": "Search 1,245 Japanese used parts in stock. Filter by make (Nissan, Toyota, Honda, Mazda, Subaru, Mitsubishi, Suzuki), model, chassis code or part type.",
+      "url": "https://sumoautoparts.co.nz/japanese.html",
+      "method": "get"
+    },
+    {
+      "name": "view_european_parts",
+      "description": "Browse European used vehicle parts and new aftermarket parts including VW, Audi, Range Rover, Land Rover, Mercedes, BMW, Mini, Jaguar.",
+      "url": "https://sumoautoparts.co.nz/european.html",
+      "method": "get"
+    }
+  ]
+}
